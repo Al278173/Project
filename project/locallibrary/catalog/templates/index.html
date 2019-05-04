@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Exam Registration</h1>
+  <p>Proceed to http://127.0.0.1:8000/accounts/login/ to login</em></p>
+  <p>Proceed to http://127.0.0.1:8000/admin/ to begin registering students for exams</em>!</p>
+  <h2>Library</h2>
+  <p>The site has the following record counts:</p>
+  <ul>
+    <li><strong>Students:</strong> {{ num_students }}</li>
+    <li><strong>Exams:</strong> {{ num_instances_available }}</li>
+    <li><strong>Schools:</strong> {{ num_schools }}</li>
+  </ul>
+{% endblock %}
